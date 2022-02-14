@@ -1,6 +1,6 @@
 package cormenProblems;
 
-public class Node {
+public class Subarray {
 	
 	int start_index;
 	int end_index;

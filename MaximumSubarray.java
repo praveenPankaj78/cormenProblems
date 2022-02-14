@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class MaximumSubarray {
 
-	private static Node output;
+	private static Subarray output;
 
 	public MaximumSubarray() {
 		// TODO Auto-generated constructor stub
@@ -30,12 +30,12 @@ public class MaximumSubarray {
 		
 	}
 
-	private static Node findMaxSubArray(int start_index, int end_index, ArrayList<Integer> arr) {
+	private static Subarray findMaxSubArray(int start_index, int end_index, ArrayList<Integer> arr) {
 		// TODO Auto-generated method stub
-		Node output = new Node();
-		Node left = new Node();
-		Node right = new Node();
-		Node mid = new Node();
+		Subarray output = new Subarray();
+		Subarray left = new Subarray();
+		Subarray right = new Subarray();
+		Subarray mid = new Subarray();
 		
 		if(start_index == end_index) {
 			output.setStart_index(start_index);
@@ -64,10 +64,10 @@ public class MaximumSubarray {
 		return output;
 	}
 
-	private static cormenProblems.Node findMaxMidSubArray(int start_index, int midIndex, int end_index,
+	private static cormenProblems.Subarray findMaxMidSubArray(int start_index, int midIndex, int end_index,
 			ArrayList<Integer> arr) {
 		// TODO Auto-generated method stub
-		Node output = new Node();
+		Subarray output = new Subarray();
 		int leftSum = Integer.MIN_VALUE; 
 		int rightSum = Integer.MIN_VALUE;
 		int leftIndex = 0; 
